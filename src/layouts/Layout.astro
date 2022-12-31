@@ -1,0 +1,24 @@
+---
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Navbar from '../components/Navbar.astro';
+import '../styles/global.css';
+
+const { pageTitle } = Astro.props;
+---
+
+<html lang="en">
+  <Head />
+  <body class="flex flex-col items-center min-h-screen antialiased overflow-x-hidden overflow-y-scroll">
+    <div class="flex-grow w-full max-w-3xl">
+      <Navbar />
+      <div class="px-4 pt-4 md:pt-8">
+        <div class="min-w-full prose lg:prose-lg animate-content-fade">
+          <slot />
+        </div>
+      </div>
+    </div>
+    <Footer />
+  </body>
+</html>

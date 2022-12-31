@@ -1,0 +1,5 @@
+---
+const { platform, url, username } = Astro.props;
+---
+
+<a class="center" href={`${url}/${username}`} target="_blank">{platform}</a>

@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+const pageTitle = 'Home';
+---
+
+<Layout pageTitle={pageTitle}>
+  <div class="text-center text-xl font-semibold"><h2>Website Roadmap</h2></div>
+  <div class="">
+    <ul class="steps steps-vertical lg:steps-horizontal lg:w-full">
+      <li data-content="✓" class="step step-primary font-bold">Make Repo</li>
+      <li data-content="!" class="step step-primary font-bold">Home</li>
+      <li class="step">About</li>
+      <li class="step">Projects</li>
+      <li class="step">Contact</li>
+      <li class="step">Complete</li>
+    </ul>
+  </div>
+</Layout>
